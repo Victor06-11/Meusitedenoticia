@@ -1,0 +1,98 @@
+/* ===============================
+   Formulário de Contato (Aprimorado)
+   =============================== */
+   .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  main h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  
+  .contact-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    background: #f7f9fb;
+    transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-form input:hover,
+  .contact-form textarea:hover {
+    background: #eef2f6;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #4b79a1;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(75,121,161,0.15);
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    max-height: 200px;
+  }
+  
+  .contact-form button {
+    align-self: flex-end;
+    background: #4b79a1;
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.15s;
+  }
+  
+  .contact-form button:hover {
+    background: #3a5a6f;
+    transform: translateY(-2px);
+  }
+  
+  /* Placeholder com estilo */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #7f8c8d;
+    opacity: 1;
+    font-style: italic;
+  }
+  
+  /* Suporte à responsividade */
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .contact-form button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
